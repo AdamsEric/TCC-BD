@@ -37,7 +37,7 @@
    <property name="title">
     <string>Alterar dados de...</string>
    </property>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="rbutton_aluno">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -50,7 +50,7 @@
      <string>Aluno</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="rbutton_prof">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -63,7 +63,7 @@
      <string>Professor</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_3">
+   <widget class="QRadioButton" name="rbutton_curso">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -76,7 +76,7 @@
      <string>Curso</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_4">
+   <widget class="QRadioButton" name="rbutton_tcc">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -89,7 +89,7 @@
      <string>TCC</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_5">
+   <widget class="QRadioButton" name="rbutton_sala">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -102,7 +102,7 @@
      <string>Sala</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_6">
+   <widget class="QRadioButton" name="rbutton_unid">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -115,7 +115,7 @@
      <string>Unidade</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="button_cancel">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -128,7 +128,7 @@
      <string>Cancel</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="button_ok">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -142,7 +142,7 @@
     </property>
    </widget>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="background">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -170,13 +170,13 @@
     <string/>
    </property>
   </widget>
-  <zorder>label</zorder>
+  <zorder>background</zorder>
   <zorder>groupBox</zorder>
  </widget>
  <resources/>
  <connections>
   <connection>
-   <sender>pushButton</sender>
+   <sender>button_cancel</sender>
    <signal>clicked()</signal>
    <receiver>dialog_alterar</receiver>
    <slot>close()</slot>

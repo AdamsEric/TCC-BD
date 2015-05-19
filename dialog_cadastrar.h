@@ -17,6 +17,9 @@ public:
 
 private:
     Ui::Dialog_cadastrar *ui;
+
+public slots:
+    void button_ok_clicado();
 };
 
 #endif // DIALOG_CADASTRAR_H

@@ -25,7 +25,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QGroupBox" name="groupCad">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -37,7 +37,7 @@
    <property name="title">
     <string>Cadastrar novo...</string>
    </property>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="radioButtonAluno">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -50,7 +50,7 @@
      <string>Aluno</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="radioButtonProfessor">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -63,7 +63,7 @@
      <string>Professor</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_3">
+   <widget class="QRadioButton" name="radioButtonCurso">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -76,7 +76,7 @@
      <string>Curso</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_4">
+   <widget class="QRadioButton" name="radioButtonTCC">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -89,7 +89,7 @@
      <string>TCC</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_5">
+   <widget class="QRadioButton" name="radioButtonSala">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -102,7 +102,7 @@
      <string>Sala</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_6">
+   <widget class="QRadioButton" name="radioButtonUnid">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -115,7 +115,7 @@
      <string>Unidade</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Cadbutton_cancel">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -128,7 +128,7 @@
      <string>Cancel</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="Cadbutton_ok">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -141,6 +141,15 @@
      <string>OK</string>
     </property>
    </widget>
+   <zorder>radioButtonAluno</zorder>
+   <zorder>radioButtonProfessor</zorder>
+   <zorder>radioButtonCurso</zorder>
+   <zorder>radioButtonTCC</zorder>
+   <zorder>radioButtonSala</zorder>
+   <zorder>radioButtonUnid</zorder>
+   <zorder>Cadbutton_cancel</zorder>
+   <zorder>Cadbutton_ok</zorder>
+   <zorder>groupAluno</zorder>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -171,12 +180,12 @@
    </property>
   </widget>
   <zorder>label</zorder>
-  <zorder>groupBox</zorder>
+  <zorder>groupCad</zorder>
  </widget>
  <resources/>
  <connections>
   <connection>
-   <sender>pushButton</sender>
+   <sender>Cadbutton_cancel</sender>
    <signal>clicked()</signal>
    <receiver>Dialog_cadastrar</receiver>
    <slot>close()</slot>
@@ -186,8 +195,8 @@
      <y>181</y>
     </hint>
     <hint type="destinationlabel">
-     <x>190</x>
-     <y>105</y>
+     <x>189</x>
+     <y>104</y>
     </hint>
    </hints>
   </connection>
