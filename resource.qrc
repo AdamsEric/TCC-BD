@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>resources/background.jpg</file>
+        <file>resources/background_2.jpg</file>
+        <file>resources/logo-unp.png</file>
+    </qresource>
+</RCC>
